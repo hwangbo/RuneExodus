@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:gravity="center"
+              tools:context=".Title">
+
+    <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout"
+            android:layout_width="640dp"
+            android:layout_height="360dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/title">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/title"></ImageView>
+
+        <ImageButton
+                android:id="@+id/startButton"
+                android:layout_width="154dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_x="248dp"
+                android:layout_y="194dp"
+                android:clickable="true"
+                android:onClick="move"
+                android:tag="start"
+                android:alpha="0"
+                android:src="@mipmap/ic_launcher_round" />
+
+        <ImageButton
+                android:id="@+id/settingButton"
+                android:layout_width="151dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:layout_x="249dp"
+                android:layout_y="246dp"
+                android:clickable="true"
+                android:onClick="move"
+                android:tag="setting"
+                android:alpha="0"
+                android:src="@mipmap/ic_launcher" />
+
+        <ImageButton
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_x="273dp"
+                android:layout_y="284dp"
+                android:clickable="true"
+                android:onClick="move"
+                android:tag="exit"
+                android:alpha="0"
+                android:src="@mipmap/ic_launcher" />
+    </AbsoluteLayout>
+
+
+
+
+</LinearLayout>

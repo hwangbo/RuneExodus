@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:gravity="center"
+              tools:context=".Menu">
+
+    <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout"
+            android:layout_width="640dp"
+            android:layout_height="360dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/menu">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/menu"></ImageView>
+
+        <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_x="556dp"
+                android:layout_y="20dp"
+                android:clickable="true"
+                android:onClick="move"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:tag="setting"
+                app:srcCompat="@drawable/gear" />
+
+        <ImageButton
+                android:id="@+id/startButton"
+                android:layout_width="112dp"
+                android:layout_height="110dp"
+                android:layout_x="27dp"
+                android:layout_y="135dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="move"
+                android:scaleType="centerInside"
+                android:tag="tutorial"
+                android:src="@drawable/tutorialbutton"/>
+    </AbsoluteLayout>
+
+</LinearLayout>

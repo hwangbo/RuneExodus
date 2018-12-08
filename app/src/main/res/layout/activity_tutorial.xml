@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:gravity="center"
+              tools:context=".Tutorial">
+
+    <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout"
+            android:layout_width="640dp"
+            android:layout_height="360dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/room_tuto">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room_tuto"></ImageView>
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="129dp"
+                android:layout_height="365dp"
+                android:layout_x="519dp"
+                android:layout_y="0dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/inventory" >
+        </ImageView>
+
+        <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="115dp"
+                android:layout_height="165dp"
+                android:layout_x="125dp"
+                android:layout_y="109dp"
+                android:alpha="100"
+                android:clickable="true"
+                android:onClick="change"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/door"
+                android:tag="door"></ImageButton>
+
+        <ImageButton
+                android:id="@+id/itemKey"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_x="400dp"
+                android:layout_y="300dp"
+                android:alpha="100"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:visibility="visible"
+                android:onClick="getItem"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/key"
+                android:tag="Item" >
+        </ImageButton>
+
+        <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_x="491dp"
+                android:layout_y="20dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="move"
+                android:scaleType="centerInside"
+                android:tag="setting"
+                app:srcCompat="@drawable/gear" />
+    </AbsoluteLayout>
+
+</LinearLayout>
